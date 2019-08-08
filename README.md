@@ -1,3 +1,4 @@
 ## Golang, Go, Go, Go
 
-Go is awesome, isn't it ? 
+Go is the coolest language you expierenced, isn't it ? 
+
