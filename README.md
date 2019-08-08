@@ -1,3 +1,3 @@
-## Golano, Go, Go, Go
+## Golang, Go, Go, Go
 
 Go is awesome, isn't it ? 
