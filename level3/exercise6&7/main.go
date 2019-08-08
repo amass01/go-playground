@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	x := "Jame"
+	x := "Jamez"
 	if x == "Jame" {
 		fmt.Println(1)
-	} else {
-		fmt.Printf("%v", x)
+	} else if 2 == 2 {
+		fmt.Printf("%v\n", x)
 	}
 }
