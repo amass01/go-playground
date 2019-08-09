@@ -5,9 +5,6 @@ import "fmt"
 func main() {
 	x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
 
-	newX := []int{}
-	newX = append(newX, x[:3]...)
-	newX = append(newX, x[6:]...)
-
+	newX := append(x[:3], x[6:]...)
 	fmt.Println(newX)
 }
