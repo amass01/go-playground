@@ -17,10 +17,11 @@ func main() {
 
 	fmt.Println(p1)
 
+	// explicit use of struct fields names when creating an instance
 	p2 := person{
-		"Amirs",
-		"Massarwas",
-		[]string{"blue", "red"},
+		firstName: "Amirs",
+		lastName:  "Massarwas",
+		favIce:    []string{"blue", "red"},
 	}
 
 	fmt.Println(p2)
