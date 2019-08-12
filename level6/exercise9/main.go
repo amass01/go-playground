@@ -3,12 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	f := func() {
-		fmt.Println("I was passed to another function")
+	f := func(xi []int) int {
+		for _, v := range xi {
+			fmt.Println(v)
+		}
+		return len(xi)
 	}
-	execute(f)
+	x := lengther(f, []int{
+		1, 2, 3, 9,
+	})
+	fmt.Println(x)
 }
 
-func execute(toRun func()) {
-	toRun()
+func lengther(length func(xi []int) int, ii []int) int {
+	return length(ii)
 }
