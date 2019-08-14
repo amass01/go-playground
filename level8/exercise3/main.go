@@ -51,5 +51,8 @@ func main() {
 
 	fmt.Println(users)
 
-	json.NewEncoder(os.Stdout).Encode(users)
+	err := json.NewEncoder(os.Stdout).Encode(users)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
