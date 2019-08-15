@@ -8,11 +8,11 @@ import (
 
 func main() {
 	var wg sync.WaitGroup
-	var m sync.Mutex
 	counter := 0
 	wg.Add(100)
 	for i := 0; i < 100; i++ {
 		go func() {
+			var m sync.Mutex
 			m.Lock()
 			v := counter
 			v++
