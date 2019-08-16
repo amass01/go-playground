@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// second gou solution
 // func main() {
 // 	c := make(chan int)
 
