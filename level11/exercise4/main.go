@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"log"
 )
@@ -28,7 +27,7 @@ func sqrt(f float64) (float64, error) {
 		return 0, sqrtError{
 			lat:  "50.2289 N",
 			long: "99.4656 W",
-			err:  errors.New("Invalid nigative input"),
+			err:  fmt.Errorf("Invalid nigative input: %v", f),
 		}
 	}
 	return 42, nil
