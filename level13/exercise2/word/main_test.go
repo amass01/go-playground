@@ -1,6 +1,9 @@
 package word
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func BenchmarkUseCount(b *testing.B) {
 	for i := 0; i < b.N; i++ {
@@ -34,4 +37,10 @@ func TestCount(t *testing.T) {
 	if s != 0 {
 		t.Error(`Expected :`, 0, "got", s)
 	}
+}
+
+func ExampleCount() {
+	fmt.Println(Count("this is a test string"))
+	// outpus:
+	// 5
 }
