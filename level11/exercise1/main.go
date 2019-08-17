@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 type person struct {
@@ -20,7 +21,7 @@ func main() {
 
 	bs, err := json.Marshal(p1)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatalln(err)
 	}
 	fmt.Println(string(bs))
 
