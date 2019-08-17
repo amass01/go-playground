@@ -1,4 +1,4 @@
-// Package dog sxpose one function to convert humans age
+// Package dog expose one function to convert humans age
 // to dog age
 package dog
 
